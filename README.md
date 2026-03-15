@@ -143,3 +143,44 @@ git push -u origin main
 ## Example Artifact (Output)
 
 ![Word Cloud Example](docs/images/word_cloud_example.png)
+
+## Project Modifications
+
+As part of the exploration phase, I made several small modifications to better understand how the preprocessing pipeline works.
+
+### Input Change
+I modified the project by replacing the default input text file with a new dataset about **Yorkshire Terriers (Yorkies)**. This allowed me to analyze a topic that interested me and observe how the preprocessing pipeline behaves with different content.
+
+### Output Change
+I updated the frequency summary to display the **top 5 most frequent cleaned tokens** instead of the original top 20 tokens. This change makes the results easier to read and focuses the output on the most common words in the dataset.
+
+### Visualization Improvements
+I improved the bar chart visualizations by:
+- changing the bar color to **hot pink**
+- adding **data labels** to the bars to display the token counts
+
+### Observations
+After running the project with the new dataset and visualization changes, the token frequencies reflected the Yorkies topic. Words related to dogs and pet care appeared among the most frequent cleaned tokens. The updated charts made it easier to quickly identify the most common terms in the dataset.
+
+## Insights from the Results
+
+### Text Preprocessing Reduced the Number of Tokens
+The preprocessing summary shows that the raw text initially contained **77 tokens** before and after punctuatioon removal.
+After removing punctuation, the number of tokens remained the same.
+However, after removing stop words, the total number of tokens decreased to **58**.
+This indicates that many common words were filtered out during preprocessing.
+
+### Most Frequent Tokens Reflect the Topic of the Dataset
+The most frequent cleaned tokens were:
+- **yorkies**
+- **their**
+- **dogs**
+- **known**
+- **coats**
+
+These words clearly relate to the subject of the dataset, which is **Yorkshire Terriers**.
+This shows that the preprocessing pipeline successfully highlighted the main topic of the text.
+
+### Visualizations Make Patterns Easier to Interpret
+The bar charts help visualize both the **token counts across preprocessing stages** and the **most frequent cleaned tokens**.
+The use of colors and data labels makes it easier to quickly interpret the results and compare token frequencies.
