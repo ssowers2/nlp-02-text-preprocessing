@@ -185,6 +185,5 @@ This shows that the preprocessing pipeline successfully highlighted the main top
 The bar charts help visualize both the **token counts across preprocessing stages** and the **most frequent cleaned tokens**.
 The use of colors and data labels makes it easier to quickly interpret the results and compare token frequencies.
 
-
 ### Areas to Improve
 - Consider other stop words to exclude such as "their".
